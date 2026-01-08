@@ -3,41 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <meta name="theme-color" content="#030712">
+    <meta name="theme-color" content="#18181b">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2103/2103633.png">
-    <title>ETM Module v3.1.1.26</title>
-    <link rel="manifest" href="./assets/manifest-DpDcz1pi.json">
+    <title>ETM Module v3.33</title>
+    <link rel="manifest" href="./assets/manifest-C60Eieky.json">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
             --sat: env(safe-area-inset-top);
-            --sar: env(safe-area-inset-right);
             --sab: env(safe-area-inset-bottom);
-            --sal: env(safe-area-inset-left);
         }
         html, body {
-            background-color: #030712;
-            color: #f3f4f6;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #18181b;
+            color: #f4f4f5;
+            font-family: 'Inter', system-ui, sans-serif;
             overflow: hidden;
             height: 100%;
             width: 100%;
             margin: 0;
             padding: 0;
-            -webkit-tap-highlight-color: transparent;
             user-select: none;
             touch-action: manipulation;
         }
-        #root {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
+        #root { height: 100%; width: 100%; display: flex; flex-direction: column; }
         .monitor-scroll::-webkit-scrollbar { width: 4px; }
-        .monitor-scroll::-webkit-scrollbar-thumb { background-color: #374151; border-radius: 2px; }
+        .monitor-scroll::-webkit-scrollbar-thumb { background-color: #3f3f46; border-radius: 2px; }
         .safe-pt { padding-top: var(--sat); }
         .safe-pb { padding-bottom: var(--sab); }
     </style>
@@ -46,25 +38,23 @@
 <script type="importmap">
 {
   "imports": {
-    "vite": "https://esm.sh/vite@^7.3.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^8.0.0"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^8.0.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-DudyA6pi.js"></script>
+  <script type="module" crossorigin src="./assets/index-C40Ddr9G.js"></script>
 </head>
-<body class="bg-gray-950">
+<body class="bg-zinc-900">
     <div id="root"></div>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js')
-            .then(reg => console.log('SW Active v3.1.1.26'))
-            .catch(err => console.error('SW Error', err));
+          navigator.serviceWorker.register('./sw.js').catch(console.error);
         });
       }
     </script>
