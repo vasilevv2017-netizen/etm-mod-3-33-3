@@ -1,0 +1,21 @@
+# Зависимости
+node_modules/
+.pnp
+.pnp.js
+
+# Сборка
+dist/
+build/
+.cache/
+
+# Android/iOS временные файлы
+android/app/build/
+android/.gradle/
+android/local.properties
+ios/App/build/
+
+# Логи и секреты
+*.log
+.env
+.env.local
+.DS_Store

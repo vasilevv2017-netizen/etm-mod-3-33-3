@@ -1,0 +1,8 @@
+{
+  "name": "ETM Module v3.33",
+  "description": "Professional CAN Bus analysis tool for mobile devices. Deep offline support and fixed layout.",
+  "version": "3.33",
+  "requestFramePermissions": [
+    "bluetooth"
+  ]
+}
